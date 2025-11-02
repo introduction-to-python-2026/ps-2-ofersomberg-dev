@@ -10,6 +10,11 @@ else:
 def find_mean(num1, num2, num3):
   return (num1 + num2 + num3)/3
 
+
 def find_mean_std(num1, num2, num3):
-  mean = (num1 + num2 + num3)/3
-  return ((((num1 - mean)**2) +((num2 - mean)**2) +((num3 - mean)**8))/3)**1/2
+  mean = (num1 + num2 + num3)/3  
+  std = float((((num1 - mean)**2) +((num2 - mean)**2) +((num3 - mean)**2))/3)**0.5
+  return std
+def find_mean(num1, num2, num3):
+  mean = (num1 + num2 + num3)/3 
+  return mean 
